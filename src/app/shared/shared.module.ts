@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
+import { ChildComponent } from './child/child.component';
 import { MatFormFieldModule } from '@angular/material/form-field'; 
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    ChildComponent
   ],
   imports: [
     CommonModule,
     MatFormFieldModule 
   ],
-  exports:[HeaderComponent]
+  exports:[ChildComponent]
 })
 export class SharedModule { }
