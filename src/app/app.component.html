@@ -1,13 +1,13 @@
 <mat-card fxLayout="column" fxLayoutGap="20px" class="main-card">
 <h1 class="mat-h1">
-  {{title}}
+  From Master App Component {{title}}
 </h1>
 
 <div fxLayout="row" fxLayoutGap="5px">
   <button mat-raised-button color="primary" routerLink="">Home</button>
-  <button mat-raised-button color="accent" routerLink="/customers">Customers</button>
+  <button mat-raised-button color="accent" routerLink="/parent">Parent</button>
   <button mat-raised-button color="warn" routerLink="/orders">Orders</button>
 </div>
-
+<p>Master Home</p>
 <router-outlet></router-outlet>
 </mat-card>

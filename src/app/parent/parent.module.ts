@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CustomersRoutingModule } from './customers-routing.module';
-import { CustomersComponent } from './customers.component';
+import { ParentRoutingModule } from './parent-routing.module';
+import { ParentComponent } from './parent.component';
 import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [
-    CustomersComponent
+    ParentComponent
   ],
   imports: [
     CommonModule,
-    CustomersRoutingModule,
+    ParentRoutingModule,
     SharedModule
   ]
 })
-export class CustomersModule { }
+export class ParentModule { }

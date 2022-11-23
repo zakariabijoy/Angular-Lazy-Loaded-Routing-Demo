@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { OrdersRoutingModule } from './orders-routing.module';
 import { OrdersComponent } from './orders.component';
-import { SharedModule } from '../shared/shared.module';
+import { MatFormFieldModule } from '@angular/material/form-field'; 
 
 
 @NgModule({
@@ -13,7 +13,7 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     OrdersRoutingModule,
-    SharedModule
+    MatFormFieldModule
   ]
 })
 export class OrdersModule { }
