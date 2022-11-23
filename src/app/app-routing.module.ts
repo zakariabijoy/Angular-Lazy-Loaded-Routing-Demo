@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { OrdersComponent } from './orders/orders.component';
+import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [
-  { path: 'parent', loadChildren: () => import('./parent/parent.module').then(m => m.ParentModule) },
-  { path: 'orders', loadChildren: () => import('./orders/orders.module').then(m => m.OrdersModule) },
+  { path: 'parent', component:ParentComponent },
+  { path: 'orders', component:OrdersComponent },
   { path: '', redirectTo: '', pathMatch: 'full'}
 ];
 
